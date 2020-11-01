@@ -1,0 +1,29 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-android-extensions'
+}
+
+apply from: 'constants.gradle'
+
+android {
+
+    compileSdkVersion constants.compileSdkVersion
+    buildToolsVersion constants.buildToolsVersion
+
+    defaultConfig {
+        applicationId "com.buyukyilmaz.dazncasestudy"
+        minSdkVersion constants.minSdkVersion
+        targetSdkVersion constants.targetSdkVersion
+        versionCode constants.versionCode
+        versionName constants.versionName
+    }
+
+    compileOptions.sourceCompatibility = 1.8
+    compileOptions.targetCompatibility = 1.8
+    kotlinOptions { jvmTarget = "1.8" }
+    viewBinding.enabled = true
+}
+
+apply from: 'buildtype.gradle'
+apply from: 'dependencies.gradle'

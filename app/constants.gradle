@@ -1,0 +1,12 @@
+ext {
+    constants = [
+            versionCode      : 1,
+            versionName      : '1.0.0',
+            minSdkVersion    : 21,
+            compileSdkVersion: 30,
+            targetSdkVersion : 30,
+            buildToolsVersion: '30.0.2',
+            kotlinVersion    : '1.4.10',
+            gradleVersion    : '4.1.0',
+    ]
+}

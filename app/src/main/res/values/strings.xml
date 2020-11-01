@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">DAZNCaseStudy</string>
+    <string-array name="menu_items">
+        <item>News</item>
+        <item>Scores</item>
+        <item>Standings</item>
+    </string-array>
+</resources>

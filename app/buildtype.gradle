@@ -1,0 +1,16 @@
+android {
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    flavorDimensions "default"
+    productFlavors {
+        prod {
+            dimension "default"
+            buildConfigField "String", "HOST", '"https://demo1899326.mockable.io/"'
+        }
+    }
+}
